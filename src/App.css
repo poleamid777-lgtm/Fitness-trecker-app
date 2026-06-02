@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,261 +7,241 @@
 }
 
 body {
-  background: #000000; 
-  font-family: "Afacad", sans-serif;
-  color: #00eaff;
-}
-
-.app {
-  max-width: 390px; 
-  margin: 0 auto;
-  background: #EDE3E1; 
-  min-height: 100vh;
-  padding: 20px 16px 30px;
-  border-radius: 20px 20px 0 0;
-}
-
-/*
-.activity-calendar {
-  background: white;
-  border-radius: 20px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.section-header {
+  font-family: 'Advent Pro Expanded', 'Advent Pro', sans-serif;
+  background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+  min-height: 100vh;
+  color: rgba(70, 10, 11, 1);;
 }
 
-.section-header h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-.today-label {
-  font-size: 14px;
-  color: #667eea;
-  font-weight: 500;
-}
-
-.week-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-
-.day-cell {
-  padding: 8px 4px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.day-cell.active {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-}
-
-.day-name {
+img {
   display: block;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 4px;
 }
 
-.day-value {
-  display: block;
-  font-size: 12px;
-  opacity: 0.7;
+h2 {
+  font-size: 26px;
+  line-height: 1.35;
 }
 
-
-.greeting {
-  margin-bottom: 20px;
+h3 {
+  font-size: 20px;
+  line-height: 1.35;
 }
 
-.greeting h2 {
-  font-size: 24px;
-  color: #333;
+.phone-container {
+  width: 390px;
+  height: 100vh;
+  max-height: 844px; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  background-color: rgba(237, 227, 225, 1);
 }
 
-
-.energy-card {
-  background: white;
-  border-radius: 16px;
-  padding: 16px;
-  margin-bottom: 20px;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  overflow-y: auto;  
+  scrollbar-width: thin;
+  
 }
 
-.energy-header {
+.bottom-nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  font-weight: 500;
+  padding: 10px 18px;
+  background-color: rgba(241, 200, 198, 1);
+  border-radius: 32px;
+  margin: auto 20px 20px 20px;
 }
 
-.energy-value {
-  color: #667eea;
-  font-weight: bold;
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 20px;
 }
 
-.energy-bar {
-  height: 8px;
-  background: #E8ECEF;
-  border-radius: 4px;
-  overflow: hidden;
+.nav-btn.active {
+  background-color: rgba(195, 244, 225, 1);
 }
 
-.energy-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-radius: 4px;
-  transition: width 0.3s ease;
-}
-
-
-.tamagotchi {
-  background: white;
-  border-radius: 24px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.pet-container {
+.profile-mascot-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  margin: 12px 0 10px 0;
 }
 
-.pet-emoji {
-  font-size: 80px;
-  animation: bounce 2s infinite;
+.profile-mascot {
+  width: 192px;
+  height: 192px;
+  background-color: #FAFBF9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+.stats-row {
+  display: flex;
+  gap: 7px;
 }
 
-.pet-name {
+.stat-card {
+  flex: 1;                    
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 8px;         
+  text-align: center;
+  font-weight: 600;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: rgba(70, 10, 11, 0.7);
+  margin-bottom: 3px;
+}
+
+.stat-value {
+  font-size: 20px;
+  color: rgba(70, 10, 11, 1);
+}
+
+
+
+.activity-section {
+  margin: 20px 0 30px;
+  padding: 0 20px;
+}
+
+.activity-title {
   font-size: 18px;
   font-weight: 600;
-  color: #333;
-}
-
-
-.calories-card {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 24px;
-  padding: 24px;
+  color: rgba(70, 10, 11, 1);
   text-align: center;
-  margin-bottom: 20px;
-  color: white;
+  margin-bottom: 16px;
 }
 
-.calories-value {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1;
+
+.activity-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
 }
 
-.calories-label {
-  font-size: 14px;
-  margin-top: 8px;
-  opacity: 0.9;
+.bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.calories-unit {
+.bar-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar-bg {
+  width: 100%;
+  height: 180px;
+  background-color: #F1C8C6;  
+  border-radius: 26px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bar-fill {
+  width: 100%;
+  background-color: #7FC2AD;  
+  border-radius: 26px;
+  transition: height 0.3s ease;
+  min-height: 4px;
+}
+
+.bar-day {
   font-size: 16px;
-  margin-top: 4px;
-  opacity: 0.7;
-}
-
-
-.trackers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.tracker-card {
-  background: white;
-  border-radius: 20px;
-  padding: 16px;
+  font-weight: 600;
+  color: rgba(70, 10, 11, 0.7);
   text-align: center;
-  transition: transform 0.2s;
 }
 
-.tracker-card:active {
-  transform: scale(0.98);
+.notification {
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 10px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.tracker-icon {
-  font-size: 32px;
-  margin-bottom: 8px;
+.notification-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(70, 10, 11, 1);
 }
 
-.tracker-value {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 4px;
-}
-
-.tracker-label {
-  font-size: 12px;
-  color: #999;
-  margin-bottom: 12px;
-}
-
-.tracker-btn {
-  background: #EDE3E1;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-  color: #667eea;
+.toggle-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.2s;
-}
-
-.tracker-btn:active {
-  background: #ddd;
-  transform: scale(0.95);
-}
-
-
-.motivation {
-  text-align: center;
-  padding: 16px;
-}
-
-.motivation p {
-  font-size: 16px;
-  color: #667eea;
-  font-weight: 500;
-}
-
-
-@media (max-width: 390px) {
-  .app {
-    padding: 16px 12px 30px;
-  }
   
-  .tracker-value {
-    font-size: 18px;
-  }
+  min-width: 48px;
+  min-height: 48px;
   
-  .calories-value {
-    font-size: 40px;
-  }
-} */
+  width: 62px;
+  height: 28px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62px;
+  height: 28px;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: 0.3s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+
+.toggle-input:checked + .toggle-slider {
+  background-color: rgba(195, 244, 225, 1);  
+}
+
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(32px);
+}
