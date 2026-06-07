@@ -7,10 +7,9 @@ function Profile() {
         <div className="profile-mascot">
           <img src="/images/profile-avatar.png" alt="avatar" className='profile-avatar'/>
         </div>
-        <h2>Моника</h2>
+        <h1>Моника</h1>
       </div>
 
-      {/* Карточка профиля */}
       <div className="stats-row">
         <div className="stat-card">
             <p className="stat-label">Рост</p>
@@ -27,7 +26,7 @@ function Profile() {
     </div>
     
     <div className="activity-section">
-    <h3 className="activity-title">Твоя активность</h3>
+    <h2 className="activity-title">Твоя активность</h2>
     
         <div className="activity-bars">
             <div className="bar-item">

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Achievements from './pages/Achievements';
 import Activity from './pages/Activity';
 import Profile from './pages/Profile';
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
