@@ -21,7 +21,6 @@ function Achievements() {
         </div>
         
         <div className="trend-slider" id="trendSlider">
-            {/* Карточка 1 */}
             <div className="trend-cards">
             <img src="images/run.svg" alt="Йога" className="trend-image" />
             <div className="trend-contents">
@@ -31,7 +30,6 @@ function Achievements() {
             </div>
             </div>
             
-            {/* Карточка 2 */}
             <div className="trend-cards">
             <img src="images/cardio.svg" alt="Кардио" className="trend-image" />
             <div className="trend-contents">
@@ -41,7 +39,6 @@ function Achievements() {
             </div>
             </div>
             
-            {/* Карточка 3 */}
             <div className="trend-cards">
             <img src="images/static.svg" alt="Планка" className="trend-image" />
             <div className="trend-contents">
@@ -51,7 +48,6 @@ function Achievements() {
             </div>
             </div>
             
-            {/* Карточка 4 */}
             <div className="trend-cards">
             <img src="images/powerlifting.svg" alt="Силовая" className="trend-image" />
             <div className="trend-contents">

@@ -58,7 +58,6 @@ function Home() {
             </div>
             </a>
 
-            {/* Блок 2 */}
             <a href="#" className="workout-card-link">
             <div className="workout-card">
             <h3>Бокс для начинающих</h3>    
@@ -79,7 +78,6 @@ function Home() {
             </div>
             </a>
 
-            {/* Блок 3 */}
             <a href="#" className="workout-card-link">
             <div className="workout-card">
             <h3>Тренировка на пресс</h3>    
